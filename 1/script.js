@@ -9,17 +9,23 @@ but.addEventListener('click',function(e) {
 });
 
 let color = {
-    blue: '#0000FF',
-    red: '#FF0000',
-    green: '#00FF00',
-    white: '#FFFFFF',
-    yellow: '##DFFF00',
-    orange: '#FFBF00'
+    blue: 'rgb(0, 0, 255)',
+    red: 'rgb(255, 0, 0)',
+    green: 'rgb(0, 255, 0)',
+    white: 'rgb(255, 255, 255)',
+    yellow: 'rgb(223, 255, 0)',
+    orange: 'rgb(255, 191, 0)'
 }
 
 
 const RandomColor = () => {
     let name = Object.keys(color);
     let value = Object.values(color);
-    console.log(name+ ', ' + value);
+    let body = document.querySelector('body');
+    let num = Math.floor(Math.random() * (name.length + 1));
+    console.log(body.style.backgroundColor)
+    while (body.attributes.backgroundColor == value[num]) {
+        num = Math.floor(Math.random() * (name.length + 1));
+    }
+    body.style.backgroundColor = value[num];
 }
