@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    margin: 40px;
+    padding: 2%;
+}
+
+.container > h3 {
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.buttons > button {
+    padding: 10px;
+    margin: 10px 20px;
+}
