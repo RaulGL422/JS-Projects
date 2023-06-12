@@ -1,5 +1,8 @@
 body {
     transition: all 0.8s ease;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 body > div {
