@@ -1,6 +1,5 @@
 let buttons = document.querySelectorAll('.buttons > button');
 let counter = document.querySelector('.counter');
-
 var count = 0;
 
 window.onload = function() {
