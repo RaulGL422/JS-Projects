@@ -1,6 +1,32 @@
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: all 0.8s ease;
+}
+
+body > div {
+    width: 40%;
+    min-width: 300px;
+    padding: 2%;
+    margin: auto;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75)
+}
+
+.but {
+    width: 50%;
+    height: 40px;
+    max-width: 200px;
+    border-radius: 5px;
+
+    background-color: rgb(209, 226, 213);
+    border: 0px;
+    margin: 0 auto;
+}
+
+.but:hover {
+    background-color: rgb(150, 159, 172);
 }

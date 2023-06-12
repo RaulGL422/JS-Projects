@@ -2,9 +2,7 @@ window.onload = function() {
     RandomColor();
 }
 
-let but = document.querySelector('.but');
-
-but.addEventListener('click',function(e) {
+document.querySelector('.but').addEventListener('click', function() {
     RandomColor();
 });
 
@@ -17,15 +15,11 @@ let color = {
     orange: 'rgb(255, 191, 0)'
 }
 
-
 const RandomColor = () => {
     let name = Object.keys(color);
     let value = Object.values(color);
-    let body = document.querySelector('body');
-    let num = Math.floor(Math.random() * (name.length + 1));
-    console.log(body.style.backgroundColor)
-    while (body.attributes.backgroundColor == value[num]) {
-        num = Math.floor(Math.random() * (name.length + 1));
-    }
-    body.style.backgroundColor = value[num];
+    let num = Math.floor(Math.random() * (name.length));
+    document.querySelector('.container').innerHTML = "<h3> Background Color: " + name[num] + "</h3>"
+    document.querySelector('body').style.backgroundColor = value[num];
 }
+
