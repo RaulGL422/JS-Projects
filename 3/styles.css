@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(48, 76, 170, 0.411);
+    width: 80%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
+
+    padding: 3% 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrows > svg {
+    fill: rgb(167, 221, 162);
+}
+
+.arrows > svg:hover {
+    fill: rgb(167, 180, 107);
+}
+
+.random {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2%;
+    background-color: rgb(167, 221, 162);
+    border: none;
+}
+
+.random:hover {
+    background-color: rgb(167, 180, 107);
+}
